@@ -2,12 +2,12 @@
 
 one:
   email: MyString
-  fist_name: MyString
+  first_name: MyString
   last_name: MyString
   password_digest: MyString
 
 two:
   email: MyString
-  fist_name: MyString
+  first_name: MyString
   last_name: MyString
   password_digest: MyString
