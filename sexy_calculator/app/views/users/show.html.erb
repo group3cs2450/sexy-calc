@@ -17,9 +17,10 @@
   <ul>
   <% @user.orders.each do |order| %>
     <li>
-      <%= link_to "Fiber Length "+order.fiber_length.to_s+" Copper Length "+order.copper_length.to_s+" Created at "+order.updated_at.to_s, order %>
+      <%= link_to "Fiber Length "+order.fiber_length.to_s+" Copper Length "+order.copper_length.to_s+" Created at "+order.updated_at.to_s, edit_order_path(order) %> <%#= link_to'Email Order', (order) %>
     </li>
+
   <% end %>
   </ul>
 </p>
-<%= link_to "Home", new_order_path %>
+

@@ -11,54 +11,54 @@
 </p>  
 <% end %>
 <%= form_for(@order) do |form| %>
-<p>
+<div id="left" >
+	<p>
 	<%= form.label "Rack Width" %><br />
 	<%= form.number_field :width %>
-</p>
-<p>
-	<%= form.label "Rack Depth" %><br />
-	<%= form.number_field :depth %>
-</p>
-<p>
+	</p>
+	<p>
 	<%= form.label "Height of Cabel Tray from Floor" %><br />
 	<%= form.number_field :height %>
+</p>
+<p>
+	<%= form.label :additional_slack %><br />
+	<%= form.number_field :additional_slack %>
+</p>
+
+<p>
+	<%= form.label :ending_u %><br />
+	<%= form.number_field :ending_u%>
+</p>
+<p>
+	<%= form.label :racks_through %><br />
+	<%= form.number_field :racks_through %>
+</p>
+</div>
+<div id="right" >
+	<p>
+	<%= form.label "Rack Depth" %><br />
+	<%= form.number_field :depth %>
 </p>
 <p>
 	<%= form.label "Distance Between Aisles" %><br />
 	<%= form.number_field :distance %>
 </p>
 <p>
-	<%= form.label :additional_slack %><br />
-	<%= form.number_field :additional_slack %>
-</p>
-<p>
 	<%= form.label :starting_u %><br />
 	<%= form.number_field :starting_u %>
-</p>
-<p>
-	<%= form.label :ending_u %><br />
-	<%= form.number_field :ending_u%>
 </p>
 <p>
 	<%= form.label :racks_crossed%><br />
 	<%= form.number_field :racks_crossed %>
 </p>
 <p>
-	<%= form.label :racks_through %><br />
-	<%= form.number_field :racks_through %>
-</p>
-<p>
 	<%= form.label "Aisles Crossed" %><br />
 	<%= form.number_field :aisles %>
 </p>
-
-
-
+</div>
 <p>
 	<%= form.submit %>
 </p>
 
 <% end %>
-<% if user_signed_in? %>
-<%= link_to "User Account", user_path(current_user) %>
-<%end%>
+

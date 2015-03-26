@@ -18,8 +18,9 @@
 	Email		:	christopher@edg3.co.uk
 	Website	:	http://www.edg3.co.uk/
 */
+
 * {
-	border:0;
+	/*border:0;*/
 	margin:0;
 	padding:0;
 }
@@ -34,7 +35,7 @@ body {
 
 /* general */
 a {
-	color:#9C0;
+	color:#99CC00;
 	text-decoration:none;
 }
 a:hover {
@@ -107,6 +108,7 @@ a:hover {
 #content {
 	background:#fff url('image/background_content.jpg') center repeat-y;
 	width:100%;
+
 }
 #content:after {
 	clear:both;
@@ -163,7 +165,8 @@ a:hover {
 	line-height:175%;
 	margin:0 auto;
 	padding:10px 235px 10px 10px;
-	width:550px;
+	width:800px;
+	/*border: 1px solid black;*/
 }
 #content_inside_main h1 {
 	border-bottom:1px solid #ccc;
@@ -178,7 +181,30 @@ a:hover {
 #content_inside_main p {
 	padding:0 0 10px;
 }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form{
+	text-align: center;
+}
+#left{
+ 	
+	display:inline-block;
+	width: 50%;
+	text-align: center;
 
+
+}
+#right{
+	float:right;
+	width: 50%;
+	text-align: center;
+}
+#edit{
+	text-align: center;
+}
 /* footer */
 #footer {
 	background:#323232 url('image/background_footer.jpg') center repeat-y;

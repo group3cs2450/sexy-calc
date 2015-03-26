@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to mycablecalculator.com, <%= @user.name %></h1>
+    <p>
+      You have successfully created an order
+      <table>
+        <tr>
+          <th>Rack Width</th>
+          <th>Rack Depth</th>
+          <th>Rack Height</th>
+          <th>Distance Between Aisles</th>
+          <th>Additional Slack</th>
+          <th>Starting U</th>
+          <th>Ending U</th>
+          <th>Racks Crossed</th>
+          <th>Racks Through</th>
+          <th>Aisles Crossed</th>
+        </tr>
+        <tr>
+          <td><%= @order.width %></td>
+          <td><%= @order.depth %></td>
+          <td><%= @order.height %></td>
+          <td><%= @order.distance %></td>
+          <td><%= @order.additional_slack %></td>
+          <td><%= @order.starting_u %></td>
+          <td><%= @order.ending_u %></td>
+          <td><%= @order.racks_crossed %></td>
+          <td><%= @order.racks_through %></td>
+          <td><%= @order.aisles %></td>
+        </tr>
+
+
+    </p>
+    <p>
+      To login to the site, just follow this link: <%= @url %>.
+    </p>
+    <p>Have a great day!</p>
+  </body>
+</html>
